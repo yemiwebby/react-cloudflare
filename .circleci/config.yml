@@ -13,6 +13,7 @@ jobs:
      - run: npm install
      - run: npm install -g wrangler
      - run: npm run build
+     - run: wrangler pages project list
      # Publish with wrangler
      - run: npx wrangler pages publish build --project-name=reactdemo # Replace dist with the name of your build folder and input your project name
 
